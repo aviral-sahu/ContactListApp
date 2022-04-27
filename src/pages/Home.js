@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     let storage = localStorage.getItem("contactList");
     let parsejson = JSON.parse(storage);
-    if (parsejson.length > 0) {
+    if (parsejson) {
       setShow(false);
     }
   }, []);
